@@ -1,21 +1,35 @@
 <!DOCTYPE html>
-<html style="text-align: center; background-color: blue; color: cyan;">
+<html style="text-align: center; background-color: blue; color: cyan; font-family: Montserrat;">
     <title>
         mbninja.com
     </title>
-    <h1>
-        <b>
-            <u>
-                Hey there, I'm Minecraft B. Ninja. Welcome to my website!</u> :)
-        </b>
-    </h1>
-    <div style="height: 60%; width: 90%; background-color: white; border-radius: 25px; margin-left: 10%; margin-top: 5%; font-size: 4vmin; display: block; margin-left: 5%; margin-right: 5%; word-break: keep-all; color: blue;">
-        <p>
-            <img src="Cartoon Me.jpg" width="100" height="100">
-        </p>
-        <p>
-            <a href="https://lorfin19.github.io/media">Media</a>
-        </p>
-    </div>
-    <img src="Minecraft B. Ninja Logo.png" width="150" height="150">
+    <body>
+        <h1>
+            <b>
+                <u>
+                    Hey there, I'm Minecraft B. Ninja. Welcome to my website!</u> :)
+            </b>
+        </h1>
+        <div style="height: 60%; width: 90%; background-color: white; border-radius: 25px; margin-left: 10%; margin-top: 5%; font-size: 4vmin; display: block; margin-left: 5%; margin-right: 5%; word-break: keep-all; color: blue;">
+            <p>
+                <img src="Cartoon Me.jpg" width="100" height="100">
+            </p>
+            <p><a href="https://lorfin19.github.io/media">Click here to visit my media page</a></p>
+            <p><a href="https://lorfin19.github.io/oceancraft">Click here to visit the OceanCraft website</a></p>
+        </div>
+        <img src="Minecraft B. Ninja Logo.png" width="150" height="150">
+    </body>
+    <p>
+        <script language=""JavaScript" type=""text/javascript">
+            function sayHello(){
+                var name = prompt ("Hi, what's your name?");
+                if(name !== null){
+                    window.alert("It's nice to meet you, "+name+"! Thanks for checking out my website!");
+                }
+            }
+        </script>
+    </p>
+    <p>
+        <button id= 'mainbutton' type='button' onclick = sayHello()>Say Hi!</button>
+    </p>
 </html>
