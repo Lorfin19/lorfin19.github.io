@@ -3,59 +3,69 @@
     <title>
         lorfinfurball.com
     </title>
-  <style>
-    #hamnav {
-      position: relative;
-    }
 
+    <style>
+      /* [ON BIG SCREEN] */
+      /* (A) WRAPPER */
       #hamnav {
       width: 100%;
       background: cyan;
-    }
+      }
 
-    /* (B) HORIZONTAL MENU ITEMS */
-    #hamitems { display: flex; }
-    #hamitems a {
+      /* (B) HORIZONTAL MENU ITEMS */
+      #hamitems { display: flex; }
+      #hamitems a {
       flex-grow: 1;
       flex-basis: 0;
-      padding: 5px;
+      padding: 10px;
       color: blue;
       text-decoration: none;
       text-align: center;
-      float: right;
-    }
-    #hamitems a:hover { background: blue; color: cyan; }
+      }
+      #hamitems a:hover { background: cyan; }
 
-    /* (C) HIDE HAMBURGER */
-    #hamnav label, #hamburger { display: none; }
+      /* (C) HIDE HAMBURGER */
+      #hamnav label, #hamburger { display: none; }
 
-    
+                      /* [ON SMALL SCREENS] */
+      @media screen and (max-width: 768px){
+      /* (A) BREAK INTO VERTICAL MENU */
+      #hamitems a {
+          box-sizing: border-box;
+          display: block;
+          width: 100%;
+          border-top: 1px solid #333;
+      }
+      
       /* (B) SHOW HAMBURGER ICON */
       #hamnav label { 
-        display: inline-block; 
-        color: blue;
-        font-style: normal;
-        font-size: 1.2em;
-        float: right;
+          display: inline-block; 
+          color: blue;
+          background: cyan;
+          font-style: normal;
+          font-size: 1.2em;
+          padding: 10px;
       }
 
       /* (C) TOGGLE SHOW/HIDE MENU */
       #hamitems { display: none; }
       #hamnav input:checked ~ #hamitems { display: block; }
-    }
-  </style>
+      }
+    </style>
 
-  <div style="overflow: hidden; background-color: cyan; display: block; color: cyan; padding: 14px 20px; text-decoration: none; height: 120px; position: sticky;">
+  <div style="overflow: hidden; background-color: cyan; display: block; color: cyan; padding: 14px 20px; text-decoration: none; height: 175px; position: sticky;">
     <div class="navbar">
       <div style="float:left;">
         <div class="padding10 center">
           <a href="https://lorfin19.github.io" class="smallBold">
-              <img src="Lorfinfurball Logo.png" width="100" height="100" alt class="frame-shadow">
+              <img src="Lorfinfurball Logo.png" width="115" height="115" alt class="frame-shadow">
               <br>
               lorfinfurball.com
           </a>
       </div>
       </div>
+      
+      <div style="float: right;">
       
             <!-- (A) MENU WRAPPER -->
       <nav id="hamnav">
@@ -65,12 +75,22 @@
       
         <!-- (C) MENU ITEMS -->
         <div id="hamitems">
-          <a href="https://lorfin19.github.io/media" target="_blank" class="smallBold">
-            <img src="Media.png" width="25" height="25" alt class="frame-shadow">Media</a>
-          <a href="https://lorfin19.github.io/videogames" target="_blank" class="smallBold">
-            <img src="Game Controller.png" width="25" height="25" alt class="frame-shadow">Video Games</a>
+
+            <div class="padding10 center">
+                <a href="https://lorfin19.github.io/media" class="smallBold">
+                    <img src="Media.png" width="25" height="25" alt class="frame-shadow">
+                    Media
+                </a>
+            </div>
+            <div class="padding10 center">
+                <a href="https://lorfin19.github.io/videogames" class="smallBold">
+                    <img src="Game Controller.png" width="25" height="25" alt class="frame-shadow">
+                    Video Games
+                </a>
+            </div>
         </div>
       </nav>
+    </div>
     </div>
     </div>
     <style>
