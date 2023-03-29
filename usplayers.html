@@ -1,49 +1,80 @@
 <!DOCTYPE html>
 <html style="text-align: center; font-family: Montserrat;">
         <title>
-           lorfinfurball.com/usplayers
+           lorfinfurball.com/oceancraft
         </title>
-        <style>
 
-            .dropdown {
-                position: relative;
-                float: left;
+        <style>
+            /* [ON BIG SCREEN] */
+            /* (A) WRAPPER */
+            #hamnav {
+            width: 100%;
+            background: white;
             }
       
-            .dropdown-content {
-                display: none;
-                position: absolute;
-                background-color: lightgrey;
-                min-width: 200px;
-                z-index: 1;
+            /* (B) HORIZONTAL MENU ITEMS */
+            #hamitems { display: flex; }
+            #hamitems a {
+            flex-grow: 1;
+            flex-basis: 0;
+            padding: 10px;
+            color: red;
+            text-decoration: none;
+            text-align: center;
             }
+            #hamitems a:hover { background: red; color: black;}
       
-            .dropdown-content a {
-                color: black;
-                padding: 12px 16px;
-                text-decoration: none;
+            /* (C) HIDE HAMBURGER */
+            #hamnav label, #hamburger { display: none; }
+      
+                            /* [ON SMALL SCREENS] */
+            @media screen and (max-width: 768px){
+            /* (A) BREAK INTO VERTICAL MENU */
+            #hamitems a {
+                box-sizing: border-box;
                 display: block;
+                width: 100%;
+                border-top: 1px solid #333;
+            }
+            
+            /* (B) SHOW HAMBURGER ICON */
+            #hamnav label { 
+                display: inline-block; 
+                color: black;
+                font-style: normal;
+                font-size: 1.2em;
+                padding: 10px;
             }
       
-            .dropdown-content a:hover {background-color: white;}
-            .dropdown:hover .dropdown-content {display: block;}
-            .dropdown:hover .dropbtn {background-color: blue;}
+            /* (C) TOGGLE SHOW/HIDE MENU */
+            #hamitems { display: none; }
+            #hamnav input:checked ~ #hamitems { display: block; }
+            }
+          </style>
       
-            </style>
       
-      <div style="overflow: hidden; background-color: purple; display: block; color: blue; padding: 14px 20px; text-decoration: none; height: 150px;">
+      <div style="overflow: hidden; background-color: rgb(154, 1, 1); display: block; color: cyan; padding: 14px 20px; text-decoration: none; height: 150px;">
           <div class="navbar">
-            <div style="float: right;">
-              <a href="https://lorfin19.github.io" target="_blank" class="smallBold"><img src="Uncraftable.png" width="100" height="100" alt class="frame-shadow"></a>
+            <div style="float: left;">
+              <a href="https://lorfin19.github.io/uncraftablesmp" class="smallBold"><img src="Uncraftable.png" width="100" height="100" alt class="frame-shadow"></a>
             </div>
-              <div class="dropdown">
-              <button class="dropbtn">Links</button>
-              <div class="dropdown-content">
+            <div style="float: right;">
+      
+                <!-- (A) MENU WRAPPER -->
+          <nav id="hamnav">
+            <!-- (B) THE HAMBURGER -->
+            <label for="hamburger">&#9776;</label>
+            <input type="checkbox" id="hamburger"/>
+          
+            <!-- (C) MENU ITEMS -->
+            <div id="hamitems">
+    
                 <a href="https://lorfin19.github.io/uncraftablesmp">Main</a>
                 <a href="https://lorfin19.github.io/usinfo">Info</a>
                 <a href="https://lorfin19.github.io/uscoordinates">Coordinates</a>
-              </div>
-              </div>
+            </div>
+          </nav>
+        </div>
           </div>
           </div>
         <style>
@@ -51,6 +82,7 @@
                 background-image:url("Uncraftable.png");
                 background-repeat:no-repeat;
                 background-size:cover;
+                background-color: rgb(154, 1, 1);
             }
         </style>
         <p>
