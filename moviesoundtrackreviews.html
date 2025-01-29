@@ -50,64 +50,18 @@
   </ul>
   </nav>
     <body>
-      <div class="dropdown">
-        <style>
-            .dropbtn {
-          background-color: aqua;
-          color: rgb(0, 0, 0);
-          padding: 5px;
-          font-size: 14px;
-          border: none;
-        }
-        
-        .dropdown {
-          position: relative;
-          display: inline-block;
-        }
-        
-        /* Dropdown Content (Hidden by Default) */
-        .dropdown-content {
-          display: none;
-          position: absolute;
-          background-color: black;
-          width: 135px;
-          box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-          z-index: 1;
-        }
-        
-        /* Links inside the dropdown */
-        .dropdown-content a {
-          color: white;
-          padding: 12px 12px;
-          text-decoration: none;
-          display: block;
-        }
-        
-        /* Change color of dropdown links on hover */
-        .dropdown-content a:hover {background-color: yellow; color: black;}
-        
-        /* Show the dropdown menu on hover */
-        .dropdown:hover .dropdown-content {display: block;}
-        
-        /* Change the background color of the dropdown button when the dropdown content is shown */
-        .dropdown:hover .dropbtn {background-color: yellow;}
-        </style>
-            <button class="dropbtn"><img src="Link.png" width="80" height="80"></button>
-                <div class="dropdown-content">
-                  <a href="matildamoviereview.html" target="_blank"><img src="matildamovie.jpg" width="100" height="100"></a>
-                  <a href="meangirlsmoviereview.html" target="_blank"><img src="Mean.jpg" width="100" height="100"></a>
-                  <a href="spiritedreview.html" target="_blank"><img src="spirited.jpg" width="100" height="100"></a>
-                </div>
-            </div>
-            <div style="text-shadow: 2px 2px black;">
-            <h2>Directory:</h2>
-            <p>For the purposes of these reviews, cussing refers to vulgar language in general, while cursing specifically refers to use of religious terms as profanity</p>
-            <p>Movie reviews are ONLY for movie soundtracks, NOT the whole movie</p>
-            <p>For song list, click on the music note</p>
-            <p>These reviews simply state any content that could be inappropriate/offensive, instead of using a rating system</p>
-            <h2>Warning:</h2>
-            <p>Any musical not on the kid-friendly list will have some inappropriate content, and not everything can be censored in a content review</p>
-            </div>
+
+            <style> 
+              .grid-container {
+                grid-template-columns: auto auto auto auto auto;
+                display: grid;
+                gap: 20px;
+              }
+              .grid-container > div {
+                display: square;
+              }
+              </style>
+
             <meta name="viewport" content="width=device-width, initial-scale=1">
             <style>
             * {box-sizing: border-box;}
@@ -165,51 +119,22 @@
             }
             </style>
             </head>
-            <body>
-            
-            <div class="slideshow-container">
-            
-            <div class="mySlides fade">
-              <img src="matildamovie.jpg" style="width:100%">
+
+            <div class="grid-container">
+              <div><a href="matildamoviereview.html" target="_blank"><img src="matildamovie.jpg" width="100" height="100"></a></div>
+              <div><a href="meangirlsmoviereview.html" target="_blank"><img src="Mean.jpg" width="100" height="100"></a></div>
+              <div><a href="spiritedreview.html" target="_blank"><img src="spirited.jpg" width="100" height="100"></a></div>
             </div>
-            
-            <div class="mySlides fade">
-              <img src="Mean.jpg" style="width:100%">
+
+            <div style="text-shadow: 2px 2px black;">
+            <h2>Directory:</h2>
+            <p>For the purposes of these reviews, cussing refers to vulgar language in general, while cursing specifically refers to use of religious terms as profanity</p>
+            <p>Movie reviews are ONLY for movie soundtracks, NOT the whole movie</p>
+            <p>For song list, click on the music note</p>
+            <p>These reviews simply state any content that could be inappropriate/offensive, instead of using a rating system</p>
+            <h2>Warning:</h2>
+            <p>Any musical not on the kid-friendly list will have some inappropriate content, and not everything can be censored in a content review</p>
             </div>
-            
-            <div class="mySlides fade">
-              <img src="spirited.jpg" style="width:100%">
-            </div>
-            
-            </div>
-            <br>
-            
-            <div style="text-align:center">
-              <span class="dot"></span> 
-              <span class="dot"></span> 
-              <span class="dot"></span> 
-            </div>
-            
-            <script>
-            let slideIndex = 0;
-            showSlides();
-            
-            function showSlides() {
-              let i;
-              let slides = document.getElementsByClassName("mySlides");
-              let dots = document.getElementsByClassName("dot");
-              for (i = 0; i < slides.length; i++) {
-                slides[i].style.display = "none";  
-              }
-              slideIndex++;
-              if (slideIndex > slides.length) {slideIndex = 1}    
-              for (i = 0; i < dots.length; i++) {
-                dots[i].className = dots[i].className.replace(" active", "");
-              }
-              slides[slideIndex-1].style.display = "block";  
-              dots[slideIndex-1].className += " active";
-              setTimeout(showSlides, 5000); // Change image every 5 seconds
-            }
-            </script>
+
     </body>
 </html>
