@@ -160,6 +160,7 @@ html {
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
+  background-position: center;
   font-family: Broadway;}
 
 body {
