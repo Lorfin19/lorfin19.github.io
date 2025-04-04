@@ -152,3 +152,16 @@ img {vertical-align: middle;}
 @media only screen and (max-width: 300px) {
   .text {font-size: 11px}
 }
+
+html {
+  text-align: center;
+  background-color: black;
+  color: white;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: Broadway;}
+
+body {
+  text-shadow: 2px 2px black;
+}
