@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html style="background-image: url('stagelights.jpeg'); color: black;">
+  <head>
+    <title>
+        Broadway Review
+    </title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+  </head>
+  <link rel="stylesheet" href="styles.css">
+
+<div class="topnav">
+  <div style="float: right;"><a href="lorfin19.github.io"><img src="Home Icon.png" width="50" height="50"></a></div>
+  
+      <h1>
+        Broadway Review
+      </h1>
+      <a href="https://lorfin19.github.io/moviesoundtrackreviews" target="_blank"><b>Movie Musical Soundtrack Reviews</b></a>
+      <a href="https://lorfin19.github.io/stagereviews" target="_blank"><b>Stage Musical Reviews</b></a>
+      <a href="https://lorfin19.github.io/cleanmusicals" target="_blank"><b>Clean Soundtracks</b></a>
+      <a href="https://lorfin19.github.io/juniorshows" target="_blank"><b>Jr. Edition Shows</b></a>
+      <!-- <a href="https://lorfin19.github.io/highschoolshows" target="_blank"><b>High School Edition Shows</b></a> -->
+      <a href="https://lorfin19.github.io/aboutpage" target="_blank"><b>About</b></a>
+</div>
+
+<body>
+
+<br>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+
+</style>
+
+<div class="slideshow-container">
+
+  <div class="mySlides fade">
+    <img src="Album Covers/bemorechillobcr.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="Album Covers/Come From Away.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides fade">
+    <img src="Album Covers/Elf.jpg" style="width:100%">
+  </div>
+
+<div class="mySlides fade">
+  <img src="Album Covers/Dear Evan Hansen.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="Album Covers/Freaky Friday.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="Album Covers/Hamilton.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="Album Covers/Heathers (US).jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="Album Covers/Heathers (UK).jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="Album Covers/Jospeh.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="Album Covers/Legally Blonde.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="Album Covers/Matilda.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="Album Covers/matildamovie.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="Album Covers/Mean Girls.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="Album Covers/Mean Girls HS.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="Album Covers/Mean Girls Jr.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="Album Covers/Mean.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="Album Covers/mrsdoubtfire.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="Album Covers/Sixbroadway.jpg" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+  <img src="Album Covers/spirited.jpg" style="width:100%">
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 3000); // Change image every 2 seconds
+}
+</script>
+<br>
+<br>
+<br>
+<!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/GqMIcUM2hwo&t" frameborder="0" allowfullscreen></iframe> -->
+
+</body>
+
+</html>
