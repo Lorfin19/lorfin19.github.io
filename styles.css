@@ -1,26 +1,49 @@
 .topnav {
+  position: fixed;
   overflow: hidden;
-  background-color: yellow;
+  color: black;
+  background-color: #fffc01;
+  width: 99%;
+  height: 15%;
 }
 
 .topnav a {
-  float: left;
   color: black;
   text-align: center;
-  padding: 5px 5px;
+  padding: 8px 8px;
   text-decoration: none;
   font-size: 20px;
 }
 
 .topnav a:hover {
   background-color: black;
-  color: yellow;
+  color: #fffc01;
   border-radius: 180px;
 }
 
-.topnav a.active {
-  background-color: yellow;
-  color: black;
+
+
+.topnav_2 {
+  position: fixed;
+  overflow: hidden;
+  color: #a20000;
+  background-color: #a46f1c;
+  width: 99%;
+  height: 15%;
+}
+
+.topnav_2 a {
+  color: #a20000;
+  text-align: center;
+  padding: 8px 8px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.topnav_2 a:hover {
+  background-color: #1C51A4;
+  color: #00A2A2;
+  border-radius: 180px;
 }
 
       /* CSS for styling the navigation bar */
@@ -73,15 +96,6 @@
     
     /* Change the background color of the dropdown button when the dropdown content is shown */
     .dropdown:hover .dropbtn {background-color: black;}
-
-    .grid-container {
-                grid-template-columns: auto auto auto auto auto;
-                display: grid;
-                gap: 1px;
-              }
-              .grid-container > div {
-                display: square;
-              }
   
   span.underline { 
       color: white; 
@@ -153,6 +167,15 @@ img {vertical-align: middle;}
 @media only screen and (max-width: 300px) {
   .text {font-size: 11px}
 }
+
+              .grid-container {
+                grid-template-columns: auto auto auto auto auto auto;
+                display: grid;
+                gap: 80px;
+              }
+              .grid-container > div {
+                display: square;
+              }
 
 html {
   text-align: center;
