@@ -1,20 +1,20 @@
 .topnav {
-  position: fixed;
+  position: sticky;
+  top: 0;
   overflow: hidden;
   color: #fffc01;
   background-color: black;
-  width: 98.6%;
   padding-bottom: 15px;
-  height: fit-content;
   border-radius: 180px;
   box-shadow: 0px 8px 16px 0px #0104FF;
   font-size: 20px;
+  z-index: 1000; /* Ensures it appears above other content */
 }
 
 .topnav a {
   color: #fffc01;
   text-decoration: none;
-  padding: 15px
+  padding: 10px
 }
 
 .topnav a:hover {
@@ -38,24 +38,23 @@
 }
 
 
-
 .topnav_2 {
-  position: fixed;
+  position: sticky;
+  top: 0;
   overflow: hidden;
   color: #a20000;
   background-color: #a46f1c;
-  width: 98.6%;
   padding-bottom: 15px;
-  height: fit-content;
   border-radius: 180px;
   box-shadow: 0px 8px 16px 0px #1C51A4;
   font-size: 20px;
+  z-index: 1000; /* Ensures it appears above other content */
 }
 
 .topnav_2 a {
   color: #a20000;
   text-decoration: none;
-  padding: 15px
+  padding: 10px
 }
 
 .topnav_2 a:hover {
@@ -63,6 +62,20 @@
   color: #00A2A2;
   border-radius: 180px;
 }
+
+.navbar-title_2 {
+  color: #a20000;
+  text-decoration: none;
+  font-size: 40px;
+  padding: 15px
+}
+
+.navbar-title_2 a:hover {
+  background-color: #a46f1c;
+  color: #a20000;
+}
+
+
 
       /* CSS for styling the navigation bar */
       nav ul {
@@ -195,7 +208,7 @@ img {vertical-align: middle;}
                 display: square;
               }
 
-html {
+              html {
   text-align: center;
   background-color: #fffc01;
   color:black;
