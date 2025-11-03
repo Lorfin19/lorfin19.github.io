@@ -1,18 +1,21 @@
 .topnav {
   position: fixed;
-  overflow: hidden;
+  overflow-y: auto;
+  overflow-x: auto;
   color: #fffc01;
   background-color: black;
-  width: 99%;
-  height: 13%;
+  width: 98.6%;
+  padding-bottom: 15px;
+  height: fit-content;
+  border-radius: 180px;
+  box-shadow: 0px 8px 16px 0px #0104FF;
+  font-size: 20px;
 }
 
 .topnav a {
   color: #fffc01;
-  text-align: center;
-  padding: 8px 8px;
   text-decoration: none;
-  font-size: 20px;
+  padding: 15px
 }
 
 .topnav a:hover {
@@ -23,21 +26,38 @@
 
 
 
+.navbar-title {
+  color: #fffc01;
+  text-decoration: none;
+  font-size: 40px;
+  padding: 15px
+}
+
+.navbar-title a:hover {
+  background-color: black;
+  color: #fffc01;
+}
+
+
+
 .topnav_2 {
   position: fixed;
-  overflow: hidden;
+  overflow-y: auto;
+  overflow-x: auto;
   color: #a20000;
   background-color: #a46f1c;
-  width: 99%;
-  height: 15%;
+  width: 98.6%;
+  padding-bottom: 15px;
+  height: fit-content;
+  border-radius: 180px;
+  box-shadow: 0px 8px 16px 0px #1C51A4;
+  font-size: 20px;
 }
 
 .topnav_2 a {
   color: #a20000;
-  text-align: center;
-  padding: 8px 8px;
   text-decoration: none;
-  font-size: 20px;
+  padding: 15px
 }
 
 .topnav_2 a:hover {
@@ -54,11 +74,11 @@
         margin: 0;
         padding: 0;
         overflow: visible;
-        background-color: yellow;
+        background-color: #fffc01;
       }
 
       .dropbtn {
-      background-color: yellow;
+      background-color: #fffc01;
       color: black;
       padding: 5px;
       font-size: 14px;
@@ -74,7 +94,7 @@
     .dropdown-content {
       display: none;
       position: absolute;
-      background-color: yellow;
+      background-color: #fffc01;
       width: 210px;
       box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
       z-index: 1;
@@ -89,7 +109,7 @@
     }
     
     /* Change color of dropdown links on hover */
-    .dropdown-content a:hover {background-color: black; color: yellow;}
+    .dropdown-content a:hover {background-color: black; color: #fffc01;}
     
     /* Show the dropdown menu on hover */
     .dropdown:hover .dropdown-content {display: block;}
@@ -179,9 +199,12 @@ img {vertical-align: middle;}
 
 html {
   text-align: center;
-  background-color: black;
+  background-color: #fffc01;
+  color:black;
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
-  font-family: Broadway;}
+            font-family: 'Broadway';
+            src: url('broadway/Broadway.ttf') format('truetype');
+  }
