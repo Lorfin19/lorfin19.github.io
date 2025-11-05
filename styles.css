@@ -1,15 +1,14 @@
 .topnav {
   position: sticky;
   top: 0;
-  overflow: hidden;
-  overflow-x: auto;
+  overflow: scroll;
   color: #fffc01;
   background-color: black;
   padding-bottom: 15px;
   border-radius: 180px;
   box-shadow: 0px 8px 16px 0px #0104FF;
   font-size: 20px;
-  height: 10%;
+  height: 150px;
   z-index: 1000; /* Ensures it appears above other content */
 }
 
@@ -43,15 +42,13 @@
 .topnav_2 {
   position: sticky;
   top: 0;
-  overflow: hidden;
-  overflow-x: auto;
+  overflow: scroll;
   color: #a20000;
   background-color: #a46f1c;
   padding-bottom: 15px;
   border-radius: 180px;
   box-shadow: 0px 8px 16px 0px #1C51A4;
   font-size: 20px;
-  height: 10%;
   z-index: 1000; /* Ensures it appears above other content */
 }
 
