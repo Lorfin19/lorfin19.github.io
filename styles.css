@@ -241,13 +241,12 @@ img {vertical-align: middle;}
 
 
               html {
-  text-align: center;
-  background-color: #fffc01;
-  color:black;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
-            font-family: 'Broadway';
-            src: url('broadway/Broadway.ttf') format('truetype');
+                text-align: center;
+                background-color: #fffc01;
+                color:black;
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-attachment: fixed;
+                background-position: center;
+                font-family: 'Broadway';
   }
