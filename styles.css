@@ -1,48 +1,62 @@
 .topnav {
   position: sticky;
   top: 0;
-  overflow: scroll;
+  height: fit-content;
   color: #fffc01;
   background-color: black;
   padding-bottom: 15px;
   border-radius: 180px;
   box-shadow: 0px 8px 16px 0px #0104FF;
   font-size: 20px;
-  height: 150px;
   z-index: 1000; /* Ensures it appears above other content */
 }
 
-.topnav a {
-  color: #fffc01;
-  text-decoration: none;
-  padding: 10px
-}
-
-.topnav a:hover {
-  background-color: #0104FF;
-  color: white;
-  border-radius: 180px;
-}
 
 
-
-.navbar-title {
+.navbar-title a{
   color: #fffc01;
   text-decoration: none;
   font-size: 40px;
-  padding: 15px
 }
 
 .navbar-title a:hover {
-  background-color: black;
   color: #fffc01;
 }
+
+
+              .nav-grid-container{
+                grid-template-columns: auto auto auto auto;
+                display: grid;
+                gap: 10px;
+                place-content: center;
+                place-items: center;
+              }
+
+              .nav-grid-container > div {
+                display: square;
+                height: fit-content;
+                width: fit-content;
+              }
+
+              .nav-grid-container a{
+                  color: #fffc01;
+                  text-decoration: none;
+                  padding: 10px;
+                  margin-right: 20px;
+                  margin-left: 20px
+              }
+
+              .nav-grid-container a:hover {
+                  background-color: #0104FF;
+                  color: white;
+                  border-radius: 180px;
+              }
 
 
 .topnav_2 {
   position: sticky;
   top: 0;
-  overflow: scroll;
+  height: fit-content;
   color: #a20000;
   background-color: #a46f1c;
   padding-bottom: 15px;
@@ -52,33 +66,48 @@
   z-index: 1000; /* Ensures it appears above other content */
 }
 
-.topnav_2 a {
-  color: #a20000;
-  text-decoration: none;
-  padding: 10px
-}
-
-.topnav_2 a:hover {
-  background-color: #1C51A4;
-  color: #00A2A2;
-  border-radius: 180px;
-}
-
-.navbar-title_2 {
+.navbar-title_2 a{
   color: #a20000;
   text-decoration: none;
   font-size: 40px;
-  padding: 15px
 }
 
 .navbar-title_2 a:hover {
-  background-color: #a46f1c;
   color: #a20000;
 }
 
+              .nav-grid-container_2 {
+                grid-template-columns: auto auto auto auto;
+                display: grid;
+                gap: 10px;
+                place-content: center;
+                place-items: center;
+              }
+
+              .nav-grid-container_2 > div {
+                display: square;
+                height: fit-content;
+                width: fit-content
+              }
+
+              .nav-grid-container_2 a{
+                  color: #a20000;
+                  text-decoration: none;
+                  padding: 10px;
+                margin-right: 20px;
+                margin-left: 20px
+              }
+
+              .nav-grid-container_2 a:hover {
+                  background-color: #1C51A4;
+                  color: #00A2A2;
+                  border-radius: 180px;
+              }
 
 
-      /* CSS for styling the navigation bar */
+      
+
+/* CSS for styling the navigation bar */
       nav ul {
         position: sticky;
         top: 0;
