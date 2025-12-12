@@ -8,7 +8,7 @@
   padding-top: 40px;
   border-radius: 180px;
   box-shadow: 0px 8px 16px 0px #0104FF;
-  font-size: 30px;
+  font-size: 21px;
   z-index: 1000; /* Ensures it appears above other content */
 }
 
@@ -28,7 +28,6 @@
               .nav-grid-container{
                 grid-template-columns: auto auto;
                 display: grid;
-                gap: 10px;
                 place-content: center;
                 place-items: center;
               }
@@ -42,7 +41,7 @@
               .nav-grid-container a{
                   color: #fffc01;
                   text-decoration: none;
-                  padding: 10px;
+                  padding: 15px;
                   margin-right: 20px;
                   margin-left: 20px
               }
@@ -64,7 +63,7 @@
   padding-top: 40px;
   border-radius: 180px;
   box-shadow: 0px 8px 16px 0px #1C51A4;
-  font-size: 30px;
+  font-size: 21px;
   z-index: 1000; /* Ensures it appears above other content */
 }
 
@@ -81,7 +80,6 @@
               .nav-grid-container_2 {
                 grid-template-columns: auto auto;
                 display: grid;
-                gap: 10px;
                 place-content: center;
                 place-items: center;
               }
@@ -93,9 +91,9 @@
               }
 
               .nav-grid-container_2 a{
-                  color: #a20000;
-                  text-decoration: none;
-                  padding: 10px;
+                color: #a20000;
+                text-decoration: none;
+                padding: 15px;
                 margin-right: 20px;
                 margin-left: 20px
               }
