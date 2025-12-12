@@ -4,8 +4,8 @@
   height: fit-content;
   color: #fffc01;
   background-color: black;
-  padding-bottom: 10px;
-  padding-top: 25px;
+  padding-bottom: 20px;
+  padding-top: 40px;
   border-radius: 180px;
   box-shadow: 0px 8px 16px 0px #0104FF;
   font-size: 30px;
@@ -60,8 +60,8 @@
   height: fit-content;
   color: #a20000;
   background-color: #a46f1c;
-  padding-bottom: 10px;
-  padding-top: 25px;
+  padding-bottom: 20px;
+  padding-top: 40px;
   border-radius: 180px;
   box-shadow: 0px 8px 16px 0px #1C51A4;
   font-size: 30px;
@@ -232,7 +232,7 @@ img {vertical-align: middle;}
 }
 
               .grid-container {
-                grid-template-columns: auto auto auto auto auto auto;
+                grid-template-columns: repeat(auto-fit, minimax(200px, 1fr));
                 display: grid;
                 gap: 80px;
               }
