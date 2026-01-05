@@ -230,12 +230,10 @@ img {vertical-align: middle;}
 }
 
               .grid-container {
-                grid-template-columns: repeat(auto-fit, minimax(200px, 1fr));
                 display: grid;
-                gap: 80px;
-              }
-              .grid-container > div {
-                display: square;
+                grid-template-columns: 1fr 1fr 1fr;
+                gap: 100px;
+                grid-template-columns: repeat (auto-fit, minmax(15rem, 1fr));
               }
 
 
