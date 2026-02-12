@@ -229,9 +229,8 @@ img {vertical-align: middle;}
   .text {font-size: 11px}
 }
 
-              .grid-container {
-                display: grid;
-                grid-template-columns: 1fr 1fr 1fr 1fr;
-                gap: 100px;
-                grid-template-columns: repeat (auto-fit, minmax(15rem, 1fr));
-              }
+.flexbox {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 100px;
+}
